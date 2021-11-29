@@ -18,7 +18,7 @@
 
 		<zeebe.version>0.25.1</zeebe.version>
 		<kafka-streams.version>2.4.0</kafka-streams.version>
-		<elasticsearch.version>7.6.0</elasticsearch.version>
+		<elasticsearch.version>7.13.2</elasticsearch.version>
 		<json.version>20190722</json.version>
 	</properties>
 
@@ -40,6 +40,23 @@
 			<artifactId>zeebe-elasticsearch-exporter</artifactId>
 			<version>${zeebe.version}</version>
 		</dependency>
+
+               <dependency>
+                       <groupId>org.elasticsearch</groupId>
+                       <artifactId>elasticsearch</artifactId>
+                       <version>${elasticsearch.version}</version>
+               </dependency>
+               <dependency>
+                       <groupId>org.elasticsearch.client</groupId>
+                       <artifactId>elasticsearch-rest-client</artifactId>
+                       <version>${elasticsearch.version}</version>
+               </dependency>
+               <dependency>
+                       <groupId>org.elasticsearch.client</groupId>
+                       <artifactId>elasticsearch-high-level-rest-client</artifactId>
+                       <version>${elasticsearch.version}</version>
+               </dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
